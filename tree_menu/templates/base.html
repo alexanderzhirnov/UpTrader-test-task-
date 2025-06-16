@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Мой сайт{% endblock %}</title>
+    <style>
+        .menu ul { list-style: none; padding-left: 20px; }
+        .menu li { margin: 5px 0; }
+        .active { font-weight: bold; color: #d00; }
+        .menu a { text-decoration: none; color: #333; }
+        .menu a:hover { color: #00d; }
+    </style>
+</head>
+<body>
+    {% load menu_tags %}
+    <div class="menu">
+        {% draw_menu 'main_menu' %}
+    </div>
+    
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

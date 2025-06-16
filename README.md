@@ -13,7 +13,9 @@
 ## Тестирование
 
 Создайте суперюзера (python manage.py createsuperuser)
+
 Запуск сервера (python manage.py runserver)
+
 Перейдите в админку: http://127.0.0.1:8000/admin/
 
 проверьте готовые меню или создайте новые
